@@ -1,0 +1,48 @@
+@import "./variables";
+.nav {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  padding-top: 2.5rem;
+  &__logo {
+    height: 6rem;
+    object-fit: contain;
+  }
+  &__space {
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    &--item {
+      padding: 0.5rem 1rem;
+      &-link {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: #474747;
+        transition: 0.5s ease;
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 3px;
+          background: #7ab259;
+          transition: width 0.5s;
+        }
+        &:hover::after {
+          content: "";
+          width: 100%;
+          background: #7ab259;
+          height: 3px;
+          opacity: 1;
+        }
+        &-active {
+          border-bottom: 3px solid #7ab259;
+        }
+      }
+      &-btn {
+        @include primary-button-style;
+      }
+    }
+  }
+}

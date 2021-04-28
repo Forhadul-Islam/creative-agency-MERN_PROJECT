@@ -1,0 +1,62 @@
+@import "./variables";
+
+.feedback {
+  @include container;
+  margin-bottom: 5rem;
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    &--span {
+      color: #7ab259;
+      padding-left: 8px;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+    &--item {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #dadada;
+      padding: 2rem;
+      border-radius: 0.7rem;
+      &--top {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        &-image {
+          height: 5.5rem;
+        }
+        &-info {
+          &-name {
+            font-size: 1.7rem;
+            font-weight: 700;
+            font-family: system-ui;
+          }
+          &-job {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: system-ui;
+          }
+        }
+      }
+      &--description {
+        font-size: 1.85rem;
+        color: #575656;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "image": "customer-1.png",
+    "name": "Nash Patrik",
+    "job": "CEO, Manpol",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat "
+  },
+  {
+    "image": "customer-2.png",
+    "name": "Miriam Barron",
+    "job": "CEO, Manpol",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat "
+  },
+  {
+    "image": "customer-3.png",
+    "name": "Bria Malone",
+    "job": "CEO, Manpol",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat "
+  },
+  {
+    "image": "customer-3.png",
+    "name": "Bria Malone",
+    "job": "CEO, Manpol",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat "
+  },
+  {
+    "image": "customer-3.png",
+    "name": "Bria Malone",
+    "job": "CEO, Manpol",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat "
+  }
+]

@@ -1,0 +1,24 @@
+@import "./variables";
+.our-work {
+  background-color: #111430;
+  margin-bottom: 5rem;
+  height: 55rem;
+  display: grid;
+  &__title {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    &--span {
+      color: #7ab259;
+      padding-left: 8px;
+    }
+  }
+  &__carousel {
+    @include container;
+    padding-bottom: 2rem;
+  }
+}

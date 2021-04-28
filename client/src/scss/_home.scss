@@ -1,0 +1,63 @@
+@import "./variables";
+.home {
+  height: 100vh;
+  background-color: #fbd062;
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 2fr 2.7fr;
+    @include md {
+      grid-template-columns: 7fr 2.8fr;
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+    &--left {
+      display: grid;
+      align-self: center;
+      width: 70%;
+      @include md {
+        width: 95%;
+      }
+      @include sm {
+        width: 100%;
+      }
+      &-title {
+        font-size: 5rem;
+        color: #111430;
+        font-weight: 700;
+      }
+      &-text {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      &-button {
+        @include primary-button-style;
+      }
+    }
+    &--image {
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+      @include sm {
+        display: none;
+      }
+    }
+  }
+  // &::after {
+  //   background: inherit;
+  //   bottom: 0;
+  //   content: "";
+  //   display: block;
+  //   height: 50%;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   transform: skewY(-4deg);
+  //   transform-origin: -16%;
+  //   z-index: -1;
+  // }
+}

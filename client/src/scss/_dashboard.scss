@@ -1,0 +1,70 @@
+@import "./variables";
+.dashboard {
+  display: grid;
+  grid-template-columns: 32rem 1fr;
+  &__sidebar {
+    display: grid;
+    grid-template-rows: 10rem 1fr;
+    justify-items: center;
+    padding-top: 4rem;
+    &--logo {
+      height: 5rem;
+      object-fit: contain;
+    }
+    &--list {
+      &-item {
+        font-size: 2.4rem;
+        display: flex;
+        align-items: center;
+        color: 000000;
+        color: #000000;
+        padding-bottom: 1rem;
+        &-link {
+          color: #000000;
+          align-items: center;
+          display: grid;
+          grid-template-columns: 3rem 1fr;
+          align-content: center;
+          &:hover {
+            color: #009444;
+          }
+          &-active {
+            color: #009444;
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    display: grid;
+    grid-template-rows: 10rem 1fr;
+    &--header {
+      padding-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 1rem;
+      padding-right: 1.3rem;
+      &-tag {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #674b70;
+      }
+      &-user {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #5f6562;
+        font-family: monospace;
+        padding-right: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    &--container {
+      background-color: #f4f7fc;
+      min-height: 84vh;
+      padding: 3rem;
+      border-radius: 0.7rem;
+    }
+  }
+}

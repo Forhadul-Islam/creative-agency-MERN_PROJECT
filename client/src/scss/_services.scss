@@ -1,0 +1,62 @@
+@import "./variables";
+
+.services {
+  @include container;
+  margin-bottom: 5rem;
+  min-height: 75vh;
+  &__title {
+    font-size: 4rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    &--span {
+      color: #7ab259;
+      padding-left: 8px;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    @include md {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm {
+      grid-template-columns: 1fr;
+    }
+    &--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 30rem;
+      max-width: 34rem;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      padding: 3rem;
+      &:hover {
+        box-shadow: 0px 0px 20px 0px #dfdfdf;
+        border-radius: 5px;
+      }
+      &-image {
+        height: 12rem;
+        object-fit: contain;
+        padding: 1rem;
+      }
+      &-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+        color: #222246;
+      }
+      &-description {
+        font-size: 1.6rem;
+        line-height: 2;
+        font-family: -webkit-pictograph;
+        color: #615f5f;
+        text-align: center;
+      }
+    }
+  }
+}

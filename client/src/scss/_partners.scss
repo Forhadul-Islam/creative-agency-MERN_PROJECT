@@ -1,0 +1,24 @@
+@import "./variables";
+.partners {
+  @include container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 18rem;
+  margin-bottom: 15rem;
+  &__item {
+    height: 7rem;
+    object-fit: contain;
+    padding: 0.5rem 1rem;
+    // animation: logoAnimation 1s linear 0s infinite alternate both;
+  }
+}
+
+@keyframes logoAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
