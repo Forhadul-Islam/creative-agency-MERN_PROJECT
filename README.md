@@ -1,2 +1,1 @@
-# creative-agency-MERN_PROJECT
-# creative-agency-mern_project
+# A MERN Stack project
