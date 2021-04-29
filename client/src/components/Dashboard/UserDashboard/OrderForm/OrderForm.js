@@ -39,7 +39,15 @@ const OrderForm = () => (
                     id="price"
                     placeholder="Price"
                 />
-                <input className="order-form__input" type="file" name="resourses" id="resourses" />
+                <label htmlFor="resourses" className="order-form__file">
+                    Upload File
+                    <input
+                        className="order-form__file--input"
+                        type="file"
+                        name="resourses"
+                        id="resourses"
+                    />
+                </label>
             </div>
             <button className="order-form__input order-form__input--button" type="submit">
                 Send

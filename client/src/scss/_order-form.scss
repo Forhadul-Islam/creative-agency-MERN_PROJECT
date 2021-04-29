@@ -35,4 +35,22 @@
       width: 18rem;
     }
   }
+  &__file {
+    border: 1px solid #6e776e;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 2.5rem;
+    font-family: serif;
+    font-weight: 700;
+    color: #1e2727;
+    background-color: #00ac3d21;
+    margin-left: 3rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #08cc4c93;
+    }
+    &--input {
+      display: none;
+    }
+  }
 }
