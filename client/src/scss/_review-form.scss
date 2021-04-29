@@ -20,7 +20,7 @@
     }
     &:focus {
       outline: none;
-      border: 1px solid gainsboro;
+      border-left: 0.5rem solid #111430;
     }
     &:placeholder-shown {
       font-size: 2rem;

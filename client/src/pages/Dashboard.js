@@ -3,7 +3,7 @@ import AdminDashboard from '../components/Dashboard/AdminDashboard/AdminDashboar
 import UserDashboard from '../components/Dashboard/UserDashboard/UserDashboard';
 
 const Dashboard = () => {
-    const [isAdmin] = useState(true);
+    const [isAdmin] = useState(false);
     return <div>{!isAdmin ? <UserDashboard /> : <AdminDashboard />}</div>;
 };
 

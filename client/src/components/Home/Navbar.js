@@ -1,10 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
 const Navbar = () => (
     <div className="nav">
-        <img className="nav__logo" src={logo} alt="logo" />
+        <Link to="/">
+            <img className="nav__logo" src={logo} alt="logo" />
+        </Link>
         <div className="nav__space" />
         <ul className="nav__menu">
             <li className="nav__menu--item">
@@ -17,31 +19,31 @@ const Navbar = () => (
                 </NavLink>
             </li>
             <li className="nav__menu--item">
-                <NavLink
-                    to="/pur-portfolio"
+                <a
+                    href="#our-portfolio"
                     className="nav__menu--item-link"
                     activeClassName="nav__menu--item-link-active"
                 >
                     Out Portfolio
-                </NavLink>
+                </a>
             </li>
             <li className="nav__menu--item">
-                <NavLink
-                    to="/our-team"
+                <a
+                    href="#our-team"
                     className="nav__menu--item-link"
                     activeClassName="nav__menu--item-link-active"
                 >
                     Our Team
-                </NavLink>
+                </a>
             </li>
             <li className="nav__menu--item">
-                <NavLink
-                    to="/contact-us"
+                <a
+                    href="#contact-us"
                     className="nav__menu--item-link"
                     activeClassName="nav__menu--item-link-active"
                 >
                     Contact Us
-                </NavLink>
+                </a>
             </li>
             <li className="nav__menu--item">
                 <NavLink

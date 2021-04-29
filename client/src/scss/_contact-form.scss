@@ -17,6 +17,7 @@
     border-radius: 0.6rem;
     &:focus {
       outline: none;
+      border-left: 0.5rem solid #111430;
     }
   }
   &__button {

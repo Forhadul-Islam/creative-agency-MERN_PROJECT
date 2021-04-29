@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { RiShoppingBagLine } from 'react-icons/ri';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { RiFileList3Line, RiMessage3Fill } from 'react-icons/ri';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import logo from '../../../images/logo.png';
 import Header from '../Shared/Header';
@@ -14,21 +15,21 @@ const sidebarInfo = [
         name: 'Orders',
         path: '/dashboard/order',
         tag: 'Order',
-        icon: () => <RiShoppingBagLine />,
+        icon: AiOutlineShoppingCart,
     },
     {
         id: 2,
         name: 'Service-list',
         path: '/dashboard/service-list',
         tag: 'Service List',
-        icon: () => <RiShoppingBagLine />,
+        icon: RiFileList3Line,
     },
     {
         id: 3,
         name: 'Review',
         path: '/dashboard/review',
         tag: 'Review',
-        icon: () => <RiShoppingBagLine />,
+        icon: RiMessage3Fill,
     },
 ];
 

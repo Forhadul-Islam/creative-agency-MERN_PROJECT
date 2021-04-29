@@ -5,7 +5,7 @@ const Sidebar = ({ setTag, sidebarInfo }) => (
     <>
         <ul className="dashboard__sidebar--list">
             {sidebarInfo.map((navItem) => (
-                <li className="dashboard__sidebar--list-item">
+                <li key={navItem.id} className="dashboard__sidebar--list-item">
                     <NavLink
                         exact
                         activeClassName="dashboard__sidebar--list-item-link-active"
@@ -15,7 +15,7 @@ const Sidebar = ({ setTag, sidebarInfo }) => (
                             setTag(navItem.tag);
                         }}
                     >
-                        <div>Icon</div>
+                        <navItem.icon />
                         {navItem.name}
                     </NavLink>
                 </li>

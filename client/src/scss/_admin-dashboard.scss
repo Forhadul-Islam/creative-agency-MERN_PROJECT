@@ -4,7 +4,7 @@
   margin-right: auto;
   min-height: 30rem;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 3rem;
   width: 95%;
   &__title {
@@ -23,6 +23,7 @@
       font-size: 1.5rem;
       &:focus {
         outline: none;
+        border-left: 0.5rem solid #111430;
       }
     }
     &--button {
@@ -35,17 +36,18 @@
 
 .add-service {
   margin: 2rem;
+  border-radius: 1rem;
 
   &__form {
     min-height: 30rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     background-color: white;
     padding: 1.5rem;
     &--info-section--title {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 500;
-      color: #5f5857;
+      color: #3b3c3b;
       margin-bottom: 0.3rem;
     }
     &--input {
@@ -54,6 +56,34 @@
       padding-left: 0.5rem;
       border-radius: 0.4rem;
       line-height: 2;
+      margin-bottom: 2rem;
+      &:focus {
+        outline: none;
+        border-left: 0.5rem solid #111430;
+      }
+    }
+    &--file-upload {
+      &-title {
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        background-color: #068b44;
+        color: white;
+        &:hover {
+          background-color: #00a14c;
+          color: white;
+        }
+      }
+      &-button {
+        display: none;
+      }
     }
     &--button {
       @include primary-button-style;

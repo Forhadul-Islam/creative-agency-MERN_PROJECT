@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { AiOutlineBorderOuter, AiOutlineUserAdd } from 'react-icons/ai';
+import { RiAddFill } from 'react-icons/ri';
 import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import logo from '../../../images/logo.png';
 import Header from '../Shared/Header';
@@ -13,18 +15,21 @@ const sidebarInfo = [
         name: 'All Orders',
         path: '/dashboard/all-orders',
         tag: 'All Orders',
+        icon: AiOutlineBorderOuter,
     },
     {
         id: 2,
         name: 'Add service',
         path: '/dashboard/add-service',
         tag: 'Add Service',
+        icon: RiAddFill,
     },
     {
         id: 3,
         name: 'Make Admin',
         path: '/dashboard/make-admin',
         tag: 'Make Admin',
+        icon: AiOutlineUserAdd,
     },
 ];
 

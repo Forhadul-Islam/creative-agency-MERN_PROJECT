@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from './ContactForm';
 
 const Footer = () => (
-    <div className="footer">
+    <div id="contact-us" className="footer">
         <div className="footer__main">
             <div className="footer__main--left">
                 <div className="footer__main--left-title">

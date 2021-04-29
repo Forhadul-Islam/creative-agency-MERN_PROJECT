@@ -7,7 +7,7 @@ function Header({ tag }) {
         <>
             <div className="dashboard__main--header-tag">{tag}</div>
             <div className="dashboard__main--header-user">
-                <FaUserCircle style={{ paddingRight: '5px', color: '#766c9d' }} />
+                <FaUserCircle style={{ paddingRight: '5px', color: 'rgb(95 101 98)' }} />
                 Mizanur Rahaman
             </div>
         </>

@@ -19,7 +19,7 @@
       &-link {
         text-decoration: none;
         font-size: 1.7rem;
-        color: #474747;
+        color: #302d2d;
         transition: 0.5s ease;
         &::after {
           content: "";
@@ -35,6 +35,7 @@
           background: #7ab259;
           height: 3px;
           opacity: 1;
+          color: red;
         }
         &-active {
           border-bottom: 3px solid #7ab259;

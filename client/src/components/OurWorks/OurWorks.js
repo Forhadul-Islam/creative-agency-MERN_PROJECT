@@ -8,7 +8,7 @@ import work4 from '../../images/carousel-4.png';
 import work5 from '../../images/carousel-5.png';
 
 const OurWorks = () => (
-    <div className="our-work">
+    <div id="our-portfolio" className="our-work">
         <div className="our-work__title">
             Here are some of <span className="our-work__title--span"> our works</span>
         </div>

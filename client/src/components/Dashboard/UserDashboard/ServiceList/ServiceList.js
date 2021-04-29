@@ -34,6 +34,15 @@ const ServiceList = () => {
                 <ServiceListItem />
                 <ServiceListItem />
                 <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
+                <ServiceListItem />
             </div>
         </div>
     );
